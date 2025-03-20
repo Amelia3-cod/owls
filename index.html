@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Про сов</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        .carousel {
+            display: flex;
+            overflow: hidden;
+            position: relative;
+            height: 200px; /* Висота каруселі */
+        }
+        .carousel img {
+            width: 200px; /* Ширина зображень */
+            height: 200px; /* Висота зображень */
+            object-fit: cover; /* Зберігає пропорції зображення */
+            transition: transform 0.5s ease;
+        }
+        .text-blocks {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .text-block {
+            width: 45%;
+            background: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .nav {
+            text-align: center;
+            padding: 10px;
+        }
+        .nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        table {
+            width: 45%;
+            border-collapse: collapse;
+            margin: 0 20px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background: #f4f4f4;
+        }
+        .symbolism {
+            width: 45%;
+        }
+        .table-title {
+            text-align: left; /* Вирівнювання ліворуч */
+            margin: 10px 0; /* Відступ зверху та знизу */
+            padding-left: 250px; /* Відступ зліва (близько 28 пробілів) */
+            width: calc(45% - 250px); /* Ширина заголовка з урахуванням відступу */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Про сов</h1>
+</header>
+
+<nav class="nav">
+    <a href="index.html">Головна</a>
+    <a href="photos.html">Фотографії</a>
+</nav>
+
+<div id="main">
+    <div class="carousel">
+        <img src="image1.jpg" alt="Сова 1">
+        <img src="image2.jpg" alt="Сова 2">
+        <img src="image3.jpg" alt="Сова 3">
+        <img src="image4.jpg" alt="Сова 4">
+        <img src="image5.jpg" alt="Сова 5">
+        <img src="image6.jpg" alt="Сова 6">
+        <img src="image7.jpg" alt="Сова 7">
+        <img src="image8.jpg" alt="Сова 8">
+    </div>
+
+    <div class="text-blocks">
+        <div class="text-block">
+            <h2>Про сов</h2>
+            <p> Сови – дуже різноманітна група птахів, в ній більше 220 видів, що належать ряду совоподібних. Загін совоподібних ділиться на два сімейства – совині, або справжні сови, і сипухові. Сови – хижі птахи. Вони харчуються великою різноманітністю видобутку, включаючи ссавців, інших птахів, комах і рептилій. В Африці і Азії навіть є види, що харчуються виключно іншими птахами</p>
+        </div>
+        <div class="text-block">
+            <h2>Місце проживання</h2>
+            <p>Сови люблять жити в лісі. Інші середовища їх проживання: арктична тундра (полярна сова); тайга (сова-сокіл); саванна (горобиний сич); пустелі та інші райони з рідкісною рослинністю (земляна сова); тропічні ліси (рогата сова); водно — болотні угіддя та лісові береги річок (болотна сова); сільськогосподарські угіддя (будинковий сич, сипуха)</p>
+        </div>
+    </div>
+
+    <h2 class="table-title">Рекорди серед сов</h2>
+    <div class="content">
+        <table>
+            <thead>
+                <tr>
+                    <th>Рекорд</th>
+                    <th>Вид сови</th>
+                    <th>Опис</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Найбільша сова</td>
+                    <td>Сова-беркут</td>
+                    <td>Цей вид сови може досягати до 70 см в довжину.</td>
+                </tr>
+                <tr>
+                    <td>Найменша сова</td>
+                    <td>Буревісник</td>
+                    <td>Ця сова має розмір лише 15 см.</td>
+                </tr>
+                <tr>
+                    <td>Найшвидша сова</td>
+                    <td>Сова-бородатка</td>
+                    <td>Може розвивати швидкість до 80 км/год під час полювання.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="symbolism">
+            <h2>Символізм сови в різних культурах</h2>
+            <ul>
+                <li><strong>Грецька міфологія:</strong> Сови асоціюються з богинею мудрості Афіною.</li>
+                <li><strong>Індійська культура:</strong> Вважаються священними птахами, пов'язаними з богинею знання Сарасваті.</li>
+                <li><strong>Африканська культура:</strong> Символізують смерть і духів; їхній крик може передвіщати лихо.</li>
+                <li><strong>Аборигени Австралії:</strong> Вважаються символом трансформації і переходу.</li>
+                <li><strong>Японська культура:</strong> Символізують удачу і захист від зла.</li>
+                <li><strong>Європейська культура:</strong> Асоціюються з магією і чаклунством.</li>
+                <li><strong>Американська індіанська культура:</strong> Символізують охорону душ і мудрість.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Simple carousel functionality
+    const images = document.querySelectorAll('.carousel img');
+    let currentIndex = 0;
+
+    function showNextImage() {
+        images[currentIndex].style.transform = 'translateX(-100%)';
+        currentIndex = (currentIndex + 1) % images.length;
+        images[currentIndex].style.transform = 'translateX(0)';
+    }
+
+    setInterval(showNextImage, 3000);
+</script>
+
+</body>
+</html>

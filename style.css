@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Про сов</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        .carousel {
+            display: flex;
+            overflow: hidden;
+            position: relative;
+            height: 300px;
+        }
+        .carousel img {
+            min-width: 100%;
+            transition: transform 0.5s ease;
+        }
+        .text-blocks {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .text-block {
+            width: 45%;
+            background: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .nav {
+            text-align: center;
+            padding: 10px;
+        }
+        .nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Про сов</h1>
+</header>
+
+<nav class="nav">
+    <a href="index.html">Головна</a>
+    <a href="photos.html">Фотографії</a>
+</nav>
+
+<div class="carousel">
+    <img src="image1.jpg" alt="Сова 1">
+    <img src="image2.jpg" alt="Сова 2">
+    <img src="image3.jpg" alt="Сова 3">
+    <img src="image4.jpg" alt="Сова 4">
+    <img src="image5.jpg" alt="Сова 5">
+    <img src="image6.jpg" alt="Сова 6">
+</div>
+
+<div class="text-blocks">
+    <div class="text-block">
+        <h2>Блок 1</h2>
+        <p>Текст для першого блоку. Інформація про сов.</p>
+    </div>
+    <div class="text-block">
+        <h2>Блок 2</h2>
+        <p>Текст для другого блоку. Додаткова інформація.</p>
+    </div>
+</div>
+
+<script>
+    // Simple carousel functionality
+    const images = document.querySelectorAll('.carousel img');
+    let currentIndex = 0;
+
+    function showNextImage() {
+        images[currentIndex].style.transform = 'translateX(-100%)';
+        currentIndex = (currentIndex + 1) % images.length;
+        images[currentIndex].style.transform = 'translateX(0)';
+    }
+
+    setInterval(showNextImage, 3000);
+</script>
+
+</body>
+</html>
